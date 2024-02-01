@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "The aws lambda layer for aws lambda authorizer by aws-jwt-verify",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "mkdir nodejs && npm install --install-links --prefix nodejs",
+    "dist": "npm install && mkdir nodejs &&  cp -r node_modules nodejs",
     "zip": "zip -r nodejs.zip nodejs",
     "clear": "rm -rf nodejs nodejs.zip"
   },
